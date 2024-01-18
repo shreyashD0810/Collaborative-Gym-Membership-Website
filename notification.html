@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to FitFlex family</title>
+  <style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+
+    .login-container {
+        width: 400px;
+        margin: 50px auto;
+        padding: 20px;
+        border: 1px solid #747474;
+    }
+
+    h1 {
+        margin-top: 0;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-bottom: 10px;
+    }
+
+    input {
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #000000;
+        border-radius: 5px;
+    }
+
+    button {
+        padding: 10px;
+        background-color: #1d11ff;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #404dff;
+    }
+
+    #error-message {
+        color: red;
+        margin-top: 20px;
+        text-align: center;
+    }
+</style>
+</head>
+<body>
+    <div class="login-container">
+        <h1><i><u>Join Us</u></i></h1>
+        <h2 align="center">Join Fit Flex your Ultimate fitness destination</h2>
+        <form id="reminderForm">
+            <label>Username:</label>
+            <input type="text" name="name" id="name">
+            <label>Mobile Number:<span>*</span></label>
+            <input type="number" name="phone" id="phone" required>
+            <label>Password:<span>*</span></label>
+            <input type="password" name="password" id="password" required>
+            <div id="messageContainer"></div>
+            <button id="next" style="display:none">Next</button>
+            <a href="http://127.0.0.1:5500/demogym.html" class="submit">Login</a>
+        </form>
+        <p id="error-message"></p>
+    </div>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Twilio Account SID and Auth Token
+            const ACCOUNT_SID = 'AC41b82208fa5cb3c84421a7454203fe6e';
+            const AUTH_TOKEN = 'bf0282132c4c685a973af9ee4b3794e1';
+    
+            // Event listener for form submission
+            $('#reminderForm').submit(function(event) {
+                event.preventDefault();
+    
+                // Retrieve form inputs
+                const name = $('#name').val();
+                const phone = $('#phone').val();
+    
+                // Message content
+                const messageBody = 'Hello ' + name + '! You,ve successfully created an account with FitFlex: Your ultimate Fitness location. For ';
+    
+                // Send SMS reminder
+                sendSMS(phone, messageBody);
+            });
+    
+            // Function to send SMS
+            function sendSMS(phone, messageBody) {
+                $.ajax({
+                    url: 'https://api.twilio.com/2010-04-01/Accounts/' + ACCOUNT_SID + '/Messages.json',
+                    type: 'POST',
+                    headers: {
+                        'Authorization': 'Basic ' + btoa(ACCOUNT_SID + ':' + AUTH_TOKEN),
+                    },
+                    data: {
+                        From: '+12526508641',
+                        To: phone,
+                        Body: messageBody
+                    },
+                    success: function(response) {
+                        console.log('SMS sent to: ' + phone + ', Message SID: ' + response.sid);
+                        alert('Reminder SMS sent to: ' + phone);
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Error:', error);
+                        alert('Failed to send reminder SMS. Please try again.');
+                    }
+                });
+            }
+        });
+    </script>
+    
+</body>
+</html>

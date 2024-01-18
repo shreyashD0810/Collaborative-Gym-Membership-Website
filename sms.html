@@ -1,0 +1,70 @@
+<<!DOCTYPE html>
+<html>
+<head>
+    <title>Send SMS Reminder</title>
+</head>
+<body>
+    <h1>Send SMS Reminder</h1>
+
+    <form id="reminderForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" required>
+
+        <button type="submit">Send Reminder</button>
+    </form>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // Twilio Account SID and Auth Token
+            const ACCOUNT_SID = 'YOUR_ACCOUNT_SID';
+            const AUTH_TOKEN = 'YOUR_AUTH_TOKEN';
+
+            // Event listener for form submission
+            $('#reminderForm').submit(function(event) {
+                event.preventDefault();
+
+                // Retrieve form inputs
+                const name = $('#name').val();
+                const phone = $('#phone').val();
+
+                // Message content
+                const messageBody = 'Hello ' + name + '! This is a reminder message.';
+
+                // Send SMS reminder
+                sendSMS(phone, messageBody);
+            });
+
+            // Function to send SMS
+            function sendSMS(phone, messageBody) {
+                $.ajax({
+                    url: 'https://api.twilio.com/2010-04-01/Accounts/' + ACCOUNT_SID + '/Messages.json',
+                    type: 'POST',
+                    headers: {
+                        'Authorization': 'Basic ' + btoa(ACCOUNT_SID + ':' + AUTH_TOKEN),
+                    },
+                    data: {
+                        From: 'YOUR_TWILIO_PHONE_NUMBER',
+                        To: phone,
+                        Body: messageBody
+                    },
+                    success: function(response) {
+                        console.log('SMS sent to: ' + phone + ', Message SID: ' + response.sid);
+                        alert('Reminder SMS sent to: ' + phone);
+                    },
+                    error: function(xhr, status, error) {
+                        console.error('Error:', error);
+                        alert('Failed to send reminder SMS. Please try again.');
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+</html>
+
+
+

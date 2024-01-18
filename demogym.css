@@ -1,0 +1,399 @@
+body {
+    background-color: #f8f8f8;
+    color: #333;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.4;
+    background-size: cover;
+  }
+  
+  .search-container {
+    display: flex;
+  }
+  
+  .search-bar {
+    width: 150px; 
+    height: 24px;
+    margin-top: 8px;
+    margin-right: 16px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid #ccc;
+    float: none;
+  }
+  nav {
+    background-color: #333;
+  padding: 1em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+  display: flex;
+  justify-content: space-between;
+  }
+  nav ul {
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav ul li {
+    margin: 0 1em;
+    position: relative;
+  }
+  
+  nav ul li a {
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  nav ul li:hover > .dropdown-menu {
+    display: block;
+    background-color: #fff;
+  }
+  nav ul li:hover > a {
+    background-color: #fff;
+    color: #333;
+  }
+.container-review {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeKtp58s01Q9f3apiu1RlNHK-Cyw1PGu40QQ&usqp=CAU");
+  background-size: cover;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+  
+ footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+  font-size: 14px;
+}
+
+footer h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+footer p {
+  margin-bottom: 20px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col-md-4 {
+  flex-basis: 33%;
+  max-width: 33%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.social-icons a:hover {
+  color: #ccc;
+}
+
+.fa {
+  font-size: inherit;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  font-family: FontAwesome;
+}
+
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  aside {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  aside img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  main {
+    flex: 1;
+    margin-left: 20px;
+  }
+  
+  form {
+    display: flex;
+    margin-top: 20px;
+  }
+  
+  input[type="text"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px 0 0 5px;
+    border: 2px solid #ccc;
+  }
+  
+  button[type="submit"] {
+    padding: 5px 10px;
+  font-size: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #666;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    margin: 2rem 0;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #666;
+    margin: 1.5rem 0;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #999;
+    margin: 1rem 0;
+  }
+.image-container {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  max-width:100%
+}
+
+.image-container img {
+  flex: 0 0 auto;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  
+}
+.image-container1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.image-container1 img {
+  flex: 1 0 calc(33.33% - 10px);
+  height: auto;
+ 
+}
+figure {
+
+  
+  align-items: left;
+  margin: 0;
+  padding: 0;
+}
+
+figcaption {
+  text-align: left;
+  margin-top: 10px;
+}
+
+figcaption h2 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.logo {
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  background-color: grey;
+  border-radius: 50%;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  width: 80px;
+  height: 80px;
+  overflow: hidden; /* Ensures the image stays within the space */
+}
+
+.logo a {
+  display: block;
+  height: 100%;
+  text-align: center;
+  
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+   border-radius: 50%;
+}
+.trainer-container {
+	display: flex;
+	justify-content: space-between;
+  }
+  
+  .trainer-box {
+	width: 30%;
+	background-color: #f2f2f2;
+	padding: 20px;
+	text-align: center;
+	box-shadow: 0 0 5px rgba(0,0,0,0.3);
+  }
+  
+  .trainer-box img {
+	width: 100%;
+	height: auto;
+	margin-bottom: 10px;
+  }
+  
+  .trainer-box h2 {
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+  }
+  
+  .trainer-box p {
+	font-size: 1rem;
+	line-height: 1.5;
+  }
+  
+.review {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 5px;
+	box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.25);
+	width: 30%;
+	margin: 20px;
+        
+}
+.review h2 {
+	margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.review form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.review label {
+	margin-bottom: 10px;
+}
+
+.review a {
+	display: block;
+	margin-bottom: 10px;
+}
+.container-heading {
+   background-image: url('https://static.toiimg.com/photo/96125662.cms');
+    background-size: cover;
+    background-position: center;
+}
+.my-3d-font {
+  font-family: 'Your Font Name', sans-serif;
+  font-size: 10em;
+  color:White;
+  text-shadow: 3px 3px #999;
+  transform: perspective(1000px) rotateY(20deg);
+}
+.attractive-text {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.attractive-text h1 {
+  font-family: Arial, sans-serif;
+  font-size: 48px;
+  color: Grey; /* Adjust the color as desired */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.attractive-text p {
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  color: #212A3E; /* Adjust the color as desired */
+  margin-top: 0;
+}
+.dropdown-menu {
+  
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #333;
+  padding: 10px;
+  border-radius: 5px;
+  z-index: 999; 
+  border:#212A3E;
+}
+
+.dropdown-menu li {
+  margin-bottom: 5px;
+  border:#212A3E;
+}
+
+.dropdown-menu a {
+  color: #333;
+  text-decoration: none;
+  border:#212A3E;
+}
+
+.dropdown-menu a:hover {
+  color: #fff;
+  background-color: #333;
+  border:#212A3E;
+}
+
+  

@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Yoga Classes at FitFlex Gym</title>
+  <style>
+    /* Global Styles */
+/* Add this CSS code to your existing styles */
+
+#benefits {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.benefit {
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.benefit:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('background.jpg');
+      background-size: cover;
+    }
+
+    nav {
+      background-color: #333;
+      padding: 1em;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25);
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .search-container {
+      display: flex;
+    }
+
+    nav ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav ul li {
+      margin: 0 1em;
+    }
+
+    nav ul li a {
+      display: block;
+      padding: 1em;
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    nav ul li a:hover {
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      background-color: rgba(255, 255, 255, 0.9);
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      color: #333;
+      font-family: 'Helvetica', sans-serif;
+      font-size: 36px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav ul li {
+      display: inline;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      padding: 10px;
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      font-size: 16px;
+      transition: background-color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #fff;
+      color: #333;
+    }
+
+    section {
+      padding: 20px;
+      background-color: #f9f9f9;
+      margin-bottom: 20px;
+    }
+
+    h2 {
+      color: #333;
+      font-family: 'Arial', sans-serif;
+      font-size: 24px;
+      margin-top: 0;
+      margin-bottom: 20px;
+    }
+
+    .class-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .class {
+      text-align: center;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .class:hover {
+      transform: translateY(-5px);
+    }
+
+    .class img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .class h3 {
+      margin-top: 10px;
+      color: #333;
+      font-family: 'Arial', sans-serif;
+      font-size: 18px;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 100%;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+
+    th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    
+ footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+  font-size: 14px;
+}
+
+footer h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+footer p {
+  margin-bottom: 20px;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col-md-4 {
+  flex-basis: 33%;
+  max-width: 33%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.social-icons a:hover {
+  color: #ccc;
+}
+
+.fa {
+  font-size: inherit;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: .2em;
+  text-align: center;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  font-family: FontAwesome;
+}
+  </style>
+</head>
+<body>
+  <header>
+  
+    <nav>
+ <h1><strong><font color="white"> FITFLEX </font color></strong></h1><br>
+      <ul>
+         <li><a href="http://127.0.0.1:5500/demogym.html">Home</a></li>
+        <li><a href="#classes">Classes</a></li>
+        <li><a href="#timing">Timing</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="classes">
+  
+    <div class="class-container">
+      <div class="class">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2jAsS9bFAAinxYEEAJzb9MEK89TTVrh3Iug&usqp=CAU" alt="Hatha Yoga">
+        <h3>Hatha Yoga</h3>
+      </div>
+      <div class="class">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQ__PupH-zUs8u4NeO7aoGItMchIJGNvD9_g&usqp=CAU" alt="Ashtanga Yoga">
+        <h3>Ashtanga Yoga</h3>
+      </div>
+      <div class="class">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS33VnfoD9kmM9BPL_ZGf76txhPJi0ggm8cCg&usqp=CAU" alt="Vinyasa Yoga">
+        <h3>Vinyasa Yoga</h3>
+      </div>
+      <div class="class">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTDhW5jgjyHX8eCwRriPDonj34UNdNor9S5Q&usqp=CAU" alt="Yin Yoga">
+        <h3>Yin Yoga</h3>
+      
+    </div>
+  </section>
+
+  <section id="timing">
+    <h2>Timing</h2>
+    <table>
+      <tr>
+        <th>Class</th>
+        <th>Day</th>
+        <th>Time</th>
+      </tr>
+      <tr>
+        <td>Hatha Yoga</td>
+        <td>Monday, Wednesday, Friday</td>
+        <td>8:00 AM - 9:00 AM</td>
+      </tr>
+      <tr>
+        <td>Ashtanga Yoga</td>
+        <td>Tuesday, Thursday</td>
+        <td>6:00 PM - 7:00 PM</td>
+      </tr>
+      <tr>
+        <td>Vinyasa Yoga</td>
+        <td>Monday, Wednesday, Friday</td>
+        <td>10:00 AM - 11:00 AM</td>
+      </tr>
+      <tr>
+        <td>Yin Yoga</td>
+        <td>Thursday</td>
+        <td>8:00 PM - 9:00 PM</td>
+      </tr>
+      <tr>
+        <td>Power Yoga</td>
+        <td>Tuesday, Friday</td>
+        <td>7:30 AM - 8:30 AM</td>
+      </tr>
+    </table>
+  </section>
+
+  <section id="benefits" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQNTZ2nVD_rF1hDPbDi4lTd42flZoJd0frfR1LrkAjlr3WqsYdT8lF5stiDr4QhGy5OVY&usqp=CAU');background-repeat: no-repeat; background-size: cover; background-position: center;">
+  <h1>Benefits of Yoga</h1>
+  <ul>
+    <li><span class="benefit">Improves flexibility and posture</span></li>
+    <li><span class="benefit">Increases strength and muscle tone</span></li>
+    <li><span class="benefit">Reduces stress and anxiety</span></li>
+    <li><span class="benefit">Enhances mental clarity and focus</span></li>
+    <li><span class="benefit">Promotes relaxation and better sleep</span></li>
+    <li><span class="benefit">Aids in weight loss and metabolism</span></li>
+    <li><span class="benefit">Boosts immune system and overall well-being</span></li>
+  </ul>
+</section>
+
+
+
+  
+ <footer id="lol">
+  <div class="container">
+    <div class="Row">
+      <div class="col-md-4">
+        <h3>About Us</h3>
+        <p>We are a fitness center dedicated to helping you achieve your health and wellness goals. Our gym is equipped with state-of-the-art equipment and a team of experienced trainers to guide you on your fitness journey.</p>
+      </div>
+       
+      <div class="col-md-4">
+        <h3>Opening Hours</h3>
+        <p>Monday - Friday: 6am - 10pm<br>Saturday - Sunday: 8am - 8pm</p>
+      </div>
+      
+  </div>
+<div class="col-md-4">
+  <h3>Contact Us</h3>
+  <p>123 Main Street<br>Anytown, USA<br>Phone: (123) 456-7890<br>Email: info@gymwebsite.com</p>
+  <div class="social-icons">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+  </div>
+</div
+  </div>
+</footer><br><br>
+</body>
+</html>
+
+
+
+
+
+

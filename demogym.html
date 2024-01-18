@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="demogym.css">
+  <title>Fitflex</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    #map-icon {
+      font-size: 24px;
+      color: #000;
+      cursor: pointer;
+    }
+
+    #map {
+      width: 100%;
+      height: 400px;
+    }
+  </style>
+  <script>
+    var mapIcon = document.getElementById("map-icon");
+    mapIcon.addEventListener("click", function () {
+      var mapUrl = "https://www.google.com/maps/sendtocar?daddr=latitude,longitude";
+      window.open(mapUrl, "_blank");
+    });
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap" async defer></script>
+  <script>
+    function initMap() {
+      var mapOptions = {
+        center: { lat: 21.126070, lng: 79.160060 },
+        zoom: 14
+      };
+
+      var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+
+      var marker = new google.maps.Marker({
+        position: { lat: 21.126070, lng: 79.160060 },
+        map: map,
+        title: "Your Location"
+      });
+    }
+  </script>
+</head>
+<body>
+<nav> 
+<div class="logo">
+     <a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8g-A8OrEYqx_zGIY136WBvHH0q8fnDatuXw&usqp=CAU" alt="Logo"></a>
+  </div>
+	<ul>
+	  <li><a href="http://127.0.0.1:5500/proteinThe2.html#product">Shop with Us!</a></li>
+	  <li><a href="http://127.0.0.1:5500/loginNotif.html">Login In</a></li>
+	  <li class="dropdown"><a href="#">Services</a>
+      <ul class="dropdown-menu">
+        <li><a href="http://127.0.0.1:5500/newzumba.html">Zumba</a></li>
+        <li><a href="http://127.0.0.1:5500/yoga%20(1).html">Yoga</a></li>
+        <li><a href="http://127.0.0.1:5500/cardio%20(1).html">Cardio</a></li>
+      </ul>
+	</li>
+	<li><a href="https://goo.gl/maps/FYw1qwmb2PrkjJZk7">map</a></li>
+	<li><a href="#lol">Contact</a></li></ul>
+	<ul><form action="https://www.google.com/search" method="GET">
+    <input type="text" name="q" placeholder="Search the web..." class="search-bar">
+    <button type="submit">Go</button></ul>
+  </form>
+  </nav>
+  
+    
+  </div>
+  <div class="container-heading">
+  
+   
+    <main>
+<h1 class="my-3d-font">FITFLEX</h1>
+<h2 align="center" ><font color="white">Your Unlimited Fitness Destination</font color></h2>    
+    </main>
+  
+</div>
+<div class="attractive-text">
+  <h1>Fitness Redefined</h1>
+  <p>Your Journey Starts Here</p>
+</div><br>
+
+<div class="image-container">
+
+<table>
+<tc><img src="https://i0.wp.com/media.giphy.com/media/41gOk8XKlx6yjOjRxS/giphy.gif?resize=480%2C270&ssl=1"></img></tc>
+<tc><img src="https://www.bodybuilding.com/images/2021/march/pull-up-header-830x467.jpg" width="400"></img></tc>
+<tc><img src="https://i0.wp.com/media.giphy.com/media/cRMgAPmlwqWFPd8ydt/giphy.gif?resize=480%2C270&ssl=1"></img></tc>
+<tc><img src="https://www.bodybuilding.com/images/2021/march/what-are-the-best-back-programs-for-mass-header-830x467.jpg"></img></tc>
+
+</table>
+</div>
+<div class="image-container">
+  <table>
+<tc><img src="https://www.bodybuilding.com/images/2021/march/hard-and-heavy-back-workout-header-830x467.jpg"></img></tc>
+<tc><img src="https://i0.wp.com/media.giphy.com/media/lo5hq89QPIzLuqMEbv/giphy.gif?resize=480%2C270&ssl=1" width="400"></img></tc>
+<tc><img src="https://www.bodybuilding.com/images/2021/march/seated-row-header-830x467.jpg"></img></tc>
+<tc><img src="https://i0.wp.com/media.giphy.com/media/8YHkwXptMpw8Ul5QhL/giphy.gif?resize=480%2C270&ssl=1"></img></tc>
+
+</table>
+</div>
+<main>
+	<h1>MEET OUR TRAINERS</h1>
+	<h2 align="center">No Pain No Gain</h2>      
+	</main>
+	<div class="trainer-container">
+		<div class="trainer-box">
+		  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRih6twRiBzJfqQ2BVspJpTPpocIfF2idUZc0eYPksW2bk0fiEtjqnxiJl20K54NNJeznM&usqp=CAU" alt="Trainer 1">
+		  <h1>Max Steel</h1>
+		  <h2>Specialization:</h2>
+		  <p>Strength Training and Muscle Building</p>
+		  <h2>Bio:</h2>
+			<p>Max Steel is a seasoned fitness expert known for his incredible strength and sculpted physique. With years of experience in strength training, he has helped numerous clients achieve remarkable muscle gains and transform their bodies. Max's personalized workout programs and motivational coaching style make him a popular choice among individuals looking to build lean muscle mass and enhance their strength.</p>
+		</div>
+		<div class="trainer-box">
+		  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk1Fj0Gml6QCIDZ82jYgsBGm6mYTUVSg7Ypnjr0kmVbQS5syKILk3u35FaSBHrlJ763CQ&usqp=CAU" alt="Trainer 2">
+		  <h1>Sophia Summers</h1>
+		  <h2>Specialization:</h2>
+		  <p> Weight Loss and Body Transformation</p>
+		  <h2>Bio:</h2>
+			<p>Sophia Summers is a renowned fitness coach dedicated to helping people achieve their weight loss goals and transform their bodies. Her holistic approach combines customized workout routines, nutrition guidance, and mindset coaching to ensure sustainable results. Sophia's infectious energy and unwavering support have empowered countless individuals to shed excess weight, improve their fitness levels, and embrace a healthier lifestyle.</p>
+		</div>
+		<div class="trainer-box">
+		  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpmNAYV3ONiYqym_KfiOwmsYId0Z4tCGm7Fb4UpHtbPuJ5-wcIQ8MLUsyrYJap4vKS7ZY&usqp=CAU" alt="Trainer 3">
+		  <h1>Alex Archer</h1>
+		  <h2>Specialization:</h2>
+		  <p> High-Intensity Interval Training (HIIT)</p>
+		  <h2>Bio:</h2>
+		  <p>
+			 Alex Archer is a highly sought-after HIIT trainer known for his dynamic and challenging workout sessions. His intense and energetic training style pushes clients to their limits, helping them burn calories, increase cardiovascular endurance, and achieve maximum fitness results. Alex's passion for HIIT and his ability to motivate individuals to surpass their limits make him a favorite among those seeking high-intensity workouts and accelerated fat loss.</p>
+		</div>
+	  </div><br><br>
+<div class="container">
+	<br><br><br>
+<main>
+<h1>FACILITIES</h1>
+<h2 align="center">Your Unlimited Fitness Destination</h2>      
+</main>
+</div>
+
+<div class="image-container1">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSN7c3LB_bCKXlZp7yVD908THHSyEVM3Q9xmw&usqp=CAU" alt="Image 1">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-IATF3eYT94hNLJch0GNDbeUlbRuSynKhgpC0j6QNCHGNCXFuZdB3yHIkTfUOknc6odI&usqp=CAU" alt="Image 2">
+  <img src="https://antonovich-design.ae/uploads/gallery/2022/5/antonovich-design-2022qcXiJBSy1jdk.jpg" width="300px" alt="Image 3"><br>
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwlwHpOnxqSGRd1kejoLOXUbZ4JXn5OFQR8Q&usqp=CAU" alt="Image 4">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlrjs0tg44z1zunIGRwFv2jnsQbWqfxfsXLcSj3Qv2Zc0BdCbvYkP0m0ehAfjlYCmSa4Q&usqp=CAU" alt="Image 5">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPnb3QgIvMX_s40VN2rIx692X3qqFSsLs80-ao3ZLo-kpFCRTckbHmLDT9mgKEhhKXdtI&usqp=CAU" alt="Image 6">
+</div>
+<br><br><br>
+
+  <center><h2>Customer Satisfaction is out Top Priority</h2></center>
+<div class="container-review">
+	
+<div class="review">
+			<h2><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBVsKaTBfdtOeb7Mi6odb6DqNbyhh0sDHbKv6ioKMm76S3u04U5W5k7ctzyw&s"></img></h2>
+			<form >
+				<label for="username"> I absolutely love it! The facilities are top-notch with a wide range of modern equipment that caters to all fitness levels.</label>
+			</form></div>
+			<div class="review">	
+			<h2><img src="https://tse4.mm.bing.net/th?id=OIP.aeANI-IkTQekg1eU-HWw6QHaIg&pid=Api&P=0&h=180"></img></h2>
+			<form>
+				<label for="password"> From high-intensity cardio sessions to relaxing yoga classes, they have something for everyone. The instructors are skilled and motivating, pushing me to reach my fitness goals.</label>
+			</form></div>
+			<div class="review">
+			<h2><img src="https://tse3.mm.bing.net/th?id=OIP.DQYH9juUs43MbTgBnrAOogHaE7&pid=Api&P=0&h=180"></img></h2>
+			<form>
+				<label for="password">The weightlifting area is well-equipped with a lot of free weights and machines. The cardio section offers a range of equipments, ensuring I never get bored with my workouts.</label>
+			</form>
+		        </div>
+      <div class="review">
+      <h2><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZpwj0QAnfrhinnuBDH3Nx2gjJ0qeYo5CP9oC1YL9Sk33MXBN1RqFjOF1NTQ&s"></img></h2>
+        <form>
+      <label for="password">The weightlifting area is well-equipped with a lot of free weights and machines. The cardio section offers a range of equipments, ensuring I never get bored with my workouts.</label>
+      </form>
+        </div>
+</div>
+  
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<script src="script.js"></script>
+
+
+
+
+ <footer id="lol">
+  <div class="container">
+    <div class="Row">
+      <div class="col-md-4">
+        <h3>About Us</h3>
+        <p>We are a fitness center dedicated to helping you achieve your health and wellness goals. Our gym is equipped with state-of-the-art equipment and a team of experienced trainers to guide you on your fitness journey.</p>
+      </div>
+       
+      <div class="col-md-4">
+        <h3>Opening Hours</h3>
+        <p>Monday - Friday: 6am - 10pm<br>Saturday - Sunday: 8am - 8pm</p>
+      </div>
+      
+  </div>
+<div class="col-md-4">
+  <h3>Contact Us</h3>
+  <p>123 Main Street<br>Anytown, USA<br>Phone: (123) 456-7890<br>Email: info@gymwebsite.com</p>
+  <div class="social-icons">
+    <a href="#"><i class="fa fa-facebook"></i></a>
+    <a href="#"><i class="fa fa-twitter"></i></a>
+    <a href="#"><i class="fa fa-instagram"></i></a>
+	<div id="map"></div>
+	<a href="https://goo.gl/maps/FYw1qwmb2PrkjJZk7">45G5+CMV, Nagpur, Maharashtra 441204</a>
+  </div>
+</div>
+  </div>
+</footer>
+</body>
+</html>
+

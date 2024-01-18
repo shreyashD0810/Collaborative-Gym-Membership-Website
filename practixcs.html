@@ -1,0 +1,97 @@
+<html>
+</head>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+#paymentOptions {
+    margin-bottom: 20px;
+}
+
+#paymentOptions > div {
+    display: none;
+}
+
+#qrCodeContainer {
+    text-align: center;
+    margin-top: 40px;
+}
+
+#qrCodeContainer img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+</style>
+        
+</head>
+ <body>
+   <h1>Payment Form</h1>
+    <form id="paymentForm" action="process_payment.php" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="paymentMethod">Payment Method:</label>
+        <select id="paymentMethod" name="paymentMethod" required>
+            <option value="">Select Payment Method</option>
+            <option value="creditCard">Credit Card</option>
+            <option value="googlePay">Google Pay</option>
+            <option value="phonePe">PhonePe</option>
+            <option value="upi">UPI ID</option>
+        </select>
+
+        <div id="paymentOptions">
+            <div id="creditCardOptions">
+                <label for="cardNumber">Card Number:</label>
+                <input type="text" id="cardNumber" name="cardNumber">
+
+                <label for="expiryDate">Expiry Date:</label>
+                <input type="text" id="expiryDate" name="expiryDate">
+
+                <label for="cvv">CVV:</label>
+                <input type="text" id="cvv" name="cvv">
+            </div>
+
+            <div id="upiOptions">
+                <label for="upiId">UPI ID:</label>
+                <input type="text" id="upiId" name="upiId">
+            </div>
+        </div>
+
+        <button type="submit">Pay Now</button>
+    </form>
+
+    <div id="qrCodeContainer">
+        <img src="https://s.yimg.com/fz/api/res/1.2/y_fklzaedqQ.GZ7pD3SwsA--~C/YXBwaWQ9c3JjaGRkO2g9MTYwO3E9ODA7dz0xNjA-/https://www.bing.com/th?id=OIP.q-bYxbqG76nt5sbBkjNX3wAAAA&w=160&h=160&rs=1&qlt=80&pid=3.1" alt="QR Code">
+        <p>Scan the QR code to make a payment.</p>
+    </div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+
+
+</html>
